@@ -20,12 +20,12 @@ export default function ScrollSection() {
       sectionRef.current,
       { translateX: 0 },
       {
-        translateX: "-200vw", // Ajustement pour s'arrêter après la section 3
+        translateX: "-200vw",
         ease: "none",
         scrollTrigger: {
           trigger: triggerRef.current,
           start: "top top",
-          end: "350% top", // Ajustement pour prendre en compte la hauteur de 150vh pour la section 3
+          end: "350% top",
           scrub: 0.6,
           pin: true,
           pinSpacing: true,
@@ -58,13 +58,13 @@ export default function ScrollSection() {
           </div>
           <div className={styles.scrollSection}>
             <h1 className={styles.titre}>QUI SUIS-JE ?</h1>
-            <p className="leading-7 mt-6">
+            <div className="leading-7 mt-6">
               Je m&apos;appelle Nolhan BILYJ,{" "}
               <TooltipProvider>
                 <Tooltip>
                   <TooltipTrigger className="border-b">j&apos;ai 19 ans</TooltipTrigger>
                   <TooltipContent>
-                    <p> Né le 11/08/05 🎂</p>
+                    Né le 11/08/05 🎂
                   </TooltipContent>
                 </Tooltip>
               </TooltipProvider>
@@ -72,7 +72,7 @@ export default function ScrollSection() {
               <LinkPreview url="https://dossier.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=18547&typeBac=0">
                 <span className="border-b">1ère année de D.U D&apos;informatique à l&apos;UHA4.0 de Mulhouse</span>
               </LinkPreview>
-            </p>
+            </div>
           </div>
           <div className={styles.scrollSection}>
             <h3>Section 3</h3>

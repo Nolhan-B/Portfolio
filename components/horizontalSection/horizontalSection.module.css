@@ -34,8 +34,8 @@
   }
   
   .moi {
-    height: clamp(200px, 20vw, 300px);
-    width: clamp(200px, 20vw, 300px);
+    height: clamp(125px, 20vw, 300px);
+    width: clamp(125px, 20vw, 300px);
     border-radius: 50%;
     object-fit: cover;
     object-position: top;
