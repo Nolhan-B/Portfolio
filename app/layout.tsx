@@ -17,7 +17,7 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "Nolhan BILYJ - Portfolio",
-  description: "Bienvenu sur mon portfolio, qui est tenu à jour au fil de mon voyave dans le monde du développement! N'hesitez pas à me contacter au besoin.",
+  description: "Bienvenu sur mon portfolio, qui est tenu à jour au fil de mon voyage dans le monde du développement! N'hesitez pas à me contacter au besoin.",
   icons: {
     icon: "/moi.jpg",  // Ajout de l'icône du favicon
   },

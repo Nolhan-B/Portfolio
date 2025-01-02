@@ -37,7 +37,7 @@ const Navbar = () => {
               <Button variant="outline" size="icon" className="z-10 md:hidden"> <Menu className="h-[1.2rem] w-[1.2rem]" /></Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent className="w-40 z-[9999]">
-              <DropdownMenuLabel>Menu</DropdownMenuLabel>
+              <DropdownMenuLabel>Navigation</DropdownMenuLabel>
               <DropdownMenuSeparator />
               <DropdownMenuGroup>
                 <DropdownMenuItem>
