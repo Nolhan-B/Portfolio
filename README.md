@@ -50,4 +50,4 @@ Ce projet est un portfolio personnel conçu avec **Next.js**, en utilisant **Sha
 
 4. **Accéder à l'application**
 
-Ouvrez http://localhost:3000 dans votre navigateur pour voir mon portfolio. 
+Ouvrez http://localhost:3000 dans votre navigateur pour voir mon portfolio.
