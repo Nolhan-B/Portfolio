@@ -33,5 +33,21 @@ Ce projet est un portfolio personnel conçu avec **Next.js**, en utilisant **Sha
 
 1. **Cloner le projet**
    ```bash
-   git clone https://github.com/votre-utilisateur/votre-repo.git
-   cd votre-repo
+   git clone https://github.com/Nolhan-B/Portfolio.git
+   cd Portfolio
+
+2. **Installer les dépendances**
+    ```bash
+    npm install
+# ou avec yarn
+    yarn install
+
+3. **Lancer le serveur de développement**
+    ```bash
+    npm run dev
+# ou avec yarn
+    yarn dev
+
+4. **Accéder à l'application**
+
+Ouvrez http://localhost:3000 dans votre navigateur pour voir mon portfolio. 
