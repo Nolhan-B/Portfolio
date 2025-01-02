@@ -147,7 +147,6 @@ const data = [
 
 import Image from "next/image";
 import { Timeline } from "@/components/ui/timeline";
-import HorizontalSection from "@/components/horizontalSection/horizontalSection";
 import ScrollSection from "@/components/horizontalSection/horizontalSection";
 
 export default function Home() {
