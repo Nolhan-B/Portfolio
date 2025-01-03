@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { motion } from "framer-motion";
@@ -7,13 +7,15 @@ import { BackgroundLines } from "@/components/ui/background-lines";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 
 import { LinkPreview } from "@/components/ui/link-preview";
-import styles from './horizontalSection.module.css';
+import styles from "./horizontalSection.module.css";
 import moi from "@/public/moi.jpg";
-
 
 export default function ScrollSection() {
   const sectionRef = useRef(null);
   const triggerRef = useRef(null);
+
+  // ✅ Suivi du statut de chargement de l'image
+  const [isImageLoaded, setIsImageLoaded] = useState(false);
 
   gsap.registerPlugin(ScrollTrigger);
 
@@ -48,21 +50,27 @@ export default function ScrollSection() {
           <div className={styles.scrollSection}>
             <BackgroundLines data-scroll data-scroll-speed="0.25" className={styles.backgroundLines}>
               <div className={styles.moiWrapper}>
+
                 <motion.div
-                  initial={{ opacity: 0, scale: 0.8, rotate: -15 }}
-                  animate={{ opacity: 1, scale: 1, rotate: 0 }}
+                  initial={{ opacity: 0, scale: 0.2, rotate: -100 }}
+                  animate={isImageLoaded ? { opacity: 1, scale: 1, rotate: 0 } : {}}
                   transition={{ type: "spring", stiffness: 120, damping: 10 }}
                 >
-                  <Image alt="Photo de moi-même, Nolhan" className={styles.moi} src={moi} />
+                  <Image
+                    alt="Photo de moi-même, Nolhan"
+                    className={styles.moi}
+                    src={moi}
+                    onLoadingComplete={() => setIsImageLoaded(true)}
+                  />
                 </motion.div>
               </div>
             </BackgroundLines>
           </div>
+
           <div className={styles.scrollSection}>
             <h1 className={styles.titre}>QUI SUIS-JE ?</h1>
+            <div className="px-12 lg:px-38 flex flex-col md:flex-row gap-8 md:gap-16 items-center md:items-start">
 
-            <div className="px-12 lg:px-38  flex flex-col md:flex-row gap-8 md:gap-16 items-center md:items-start">
-              {/* Première colonne */}
               <div className="flex-1 text-center md:text-left">
                 <h4 className="scroll-m-20 text-lg sm:text-xl font-semibold tracking-tight">
                   Bien le Bonjour &#128075; !
@@ -72,9 +80,7 @@ export default function ScrollSection() {
                   <TooltipProvider>
                     <Tooltip>
                       <TooltipTrigger className="border-b">j&apos;ai 19 ans</TooltipTrigger>
-                      <TooltipContent>
-                        Né le 11/08/05 &#127874;
-                      </TooltipContent>
+                      <TooltipContent>Né le 11/08/05 &#127874;</TooltipContent>
                     </Tooltip>
                   </TooltipProvider>
                   &nbsp;et suis actuellement étudiant en&nbsp;
@@ -90,19 +96,19 @@ export default function ScrollSection() {
               {/* Deuxième colonne */}
               <div className="flex-1 text-center md:text-left">
                 <h4 className="scroll-m-20 text-lg sm:text-xl font-semibold tracking-tight">
-                  Mes loisirs 🎯
+                  Mes loisirs &#128214;
                 </h4>
                 <div className="leading-6 sm:leading-7">
-                    En dehors de mes études, je pratique le&nbsp;
-                    <LinkPreview className="border-b pb-1" url="https://www.fftt.com/site/personnes/by-number?number_id=904998">
-                      tennis de table en compétition et suis actuellement classé 9
-                    </LinkPreview>
-                    &nbsp;, la musculation et je suis passionné par 
-                    l&apos;esport 🎮 un domaine qui allie stratégie et passion pour les jeux vidéo.
+                  En dehors de mes études, je pratique le&nbsp;
+                  <LinkPreview className="border-b pb-1" url="https://www.fftt.com/site/personnes/by-number?number_id=904998">
+                    tennis de table en compétition et suis actuellement classé 9
+                  </LinkPreview>
+                  &nbsp;, la musculation et je suis passionné par l&apos;esport un domaine qui allie stratégie et passion pour les jeux vidéo.
                 </div>
               </div>
             </div>
           </div>
+
           <div className={styles.scrollSection}>
             <h3>Section 3</h3>
           </div>
