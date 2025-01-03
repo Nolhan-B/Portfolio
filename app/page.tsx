@@ -10,7 +10,7 @@ import vtc7 from '@/public/screen-dbvtc/7.png';
 import vtc8 from '@/public/screen-dbvtc/8.png';
 import vtc9 from '@/public/screen-dbvtc/9.png';
 
-import { Eye, Github, Link, Share, Watch } from 'lucide-react';
+import { Eye, Github } from 'lucide-react';
 
 const data = [
   {
