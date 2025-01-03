@@ -111,7 +111,7 @@ const data = [
         <div className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mt-8 mb-8 flex gap-4">
           <TooltipProvider>
             <Tooltip>
-              <TooltipTrigger className="border-b">
+              <TooltipTrigger>
                 <Button
                   variant="outline"
                   size="icon"
@@ -128,7 +128,7 @@ const data = [
 
           <TooltipProvider>
           <Tooltip>
-            <TooltipTrigger className="border-b">
+            <TooltipTrigger>
               <Button
                 variant="outline"
                 size="icon"
