@@ -289,16 +289,16 @@ export default function Home() {
     <>
       <ScrollSection />
       <Timeline data={data} />
-      <div style={{height: '100vh'}}></div>
-      <MacbookScroll
-        title={
-          <span>
-            Sur LinkedIn, c’est du classique… <br /> Ici, c’est du sur-mesure, fait à la main et livré avec un sourire !
-          </span>
-        }
-        showGradient={false}
-      />
-      <div className='bg-background' style={{height: '100vh', zIndex: '5', position: 'relative'}}>Footer</div>
+        <MacbookScroll
+          title={
+            <span>
+              Sur LinkedIn, c’est du classique… <br /> Ici, c’est du sur-mesure, fait à la main et livré avec un sourire !
+            </span>
+          }
+          showGradient={false}
+        />
+      <div className='bg-background' style={{height: '300px', zIndex: '5', position: 'relative'}}>Footer</div>
+      
     </>
   );
 }
