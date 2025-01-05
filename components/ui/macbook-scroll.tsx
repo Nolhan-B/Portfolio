@@ -24,7 +24,7 @@ import { IconCommand } from "@tabler/icons-react";
 import { IconCaretLeftFilled } from "@tabler/icons-react";
 import { IconCaretDownFilled } from "@tabler/icons-react";
 import { Button } from "./button";
-import { Check, Download, Loader2 } from "lucide-react";
+import { Download, Loader2 } from "lucide-react";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 import { useToast } from "@/hooks/use-toast";
 
@@ -158,7 +158,7 @@ export const Lid = ({
       } catch (error) {
         toast({
           title: "Erreur de téléchargement",
-          description: `Une erreur est survenue pendant le téléchargement de ${fileName}.`,
+          description: `Une erreur est survenue pendant le téléchargement de ${fileName}, erreur : ${error}`,
           variant: "destructive",
         });
       } finally {
