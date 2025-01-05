@@ -60,7 +60,7 @@ export default function ScrollSection() {
                     alt="Photo de moi-même, Nolhan"
                     className={styles.moi}
                     src={moi}
-                    onLoadingComplete={() => setIsImageLoaded(true)}
+                    onLoad={() => setIsImageLoaded(true)}
                   />
                 </motion.div>
               </div>

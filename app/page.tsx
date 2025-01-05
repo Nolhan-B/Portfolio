@@ -10,7 +10,7 @@ import vtc7 from '@/public/screen-dbvtc/7.png';
 import vtc8 from '@/public/screen-dbvtc/8.png';
 import vtc9 from '@/public/screen-dbvtc/9.png';
 
-import { Eye, Github } from 'lucide-react';
+import { Eye, Github, Info } from 'lucide-react';
 
 const data = [
   {
@@ -60,9 +60,6 @@ const data = [
           L’un des principaux atouts de notre site est son outil de calcul de tarifs interactif, basé sur l’API Google Maps. Ce calculateur permet aux utilisateurs d’obtenir une estimation rapide et précise de leurs trajets. Le processus est simple : il suffit de renseigner une adresse de départ et une adresse d’arrivée. Grâce à la fonctionnalité d’auto-complétion, la recherche des adresses est facilitée, avec des suggestions pertinentes qui limitent les erreurs de saisie. En complément, il est nécessaire de fournir une heure de départ et une heure d’arrivée. Selon la plage horaire indiquée, une majoration de nuit est automatiquement appliquée pour les trajets effectués entre certaines heures (par exemple, entre 22h et 6h). Cela permet de fournir un tarif réaliste, tenant compte des éventuels surcoûts nocturnes.
         </p>
 
-        <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mt-8 mb-8">
-          Une fois que toutes les informations sont renseignées et que l’itinéraire proposé ainsi que le tarif estimé conviennent, les utilisateurs n’ont plus qu’à remplir leurs coordonnées (nom, prénom et numéro de téléphone). Ces données sont ensuite envoyées par mail, permettant ainsi de finaliser la demande de réservation en toute simplicité.
-        </p>
         <div className="grid grid-cols-2 gap-4">
           <Image
             src={vtc5}
@@ -78,6 +75,13 @@ const data = [
             height={500}
             className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
           />
+        </div>
+
+        <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mt-8 mb-8">
+          Une fois que toutes les informations sont renseignées et que l’itinéraire proposé ainsi que le tarif estimé conviennent, les utilisateurs n’ont plus qu’à remplir leurs coordonnées (nom, prénom et numéro de téléphone). Ces données sont ensuite envoyées par mail, permettant ainsi de finaliser la demande de réservation en toute simplicité.
+        </p>
+
+        <div className="grid grid-cols-2 gap-4">
           <Image
             src={vtc7}
             alt="Screenshot du site db-vtc-comtois"
@@ -108,10 +112,29 @@ const data = [
           />
         </div>
 
-        <div className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mt-8 mb-8 flex gap-4">
+        <div className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mt-8 mb-8 flex gap-2 items-center">
+        <Popover>
+          <PopoverTrigger>
+            <TooltipProvider>
+              <Tooltip>
+                <TooltipTrigger asChild>
+                  <Button variant="outline" size="icon">
+                    <Info />
+                  </Button>
+                </TooltipTrigger>
+                <TooltipContent>Informations</TooltipContent>
+              </Tooltip>
+            </TooltipProvider>
+          </PopoverTrigger>
+          <PopoverContent>
+            Le projet utilise HTML, CSS, JavaScript avec l&apos;API Google Maps. Également il inclut un système d&apos;envoi d&apos;e-mails avec un fichier PHP, en utilisant AJAX pour la communication entre le frontend et le backend.
+          </PopoverContent>
+        </Popover>
+
+
           <TooltipProvider>
             <Tooltip>
-              <TooltipTrigger>
+              <TooltipTrigger asChild>
                 <Button
                   variant="outline"
                   size="icon"
@@ -128,7 +151,7 @@ const data = [
 
           <TooltipProvider>
           <Tooltip>
-            <TooltipTrigger>
+            <TooltipTrigger asChild>
               <Button
                 variant="outline"
                 size="icon"
@@ -252,6 +275,7 @@ import { Timeline } from "@/components/ui/timeline";
 import ScrollSection from "@/components/horizontalSection/horizontalSection";
 import { Button } from '@/components/ui/button';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
+import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
 
 export default function Home() {
 
