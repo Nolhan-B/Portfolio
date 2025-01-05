@@ -69,9 +69,9 @@ export default function ScrollSection() {
 
           <div className={styles.scrollSection}>
             <h1 className={styles.titre}>QUI SUIS-JE ?</h1>
-            <div className="px-12 lg:px-38 flex flex-col md:flex-row gap-8 md:gap-16 items-center md:items-start">
+            <div className="px-12 lg:px-38 flex flex-col gap-8 md:gap-16 items-center ">
 
-              <div className="flex-1 text-center md:text-left">
+              <div className="flex-1 text-center">
                 <h4 className="scroll-m-20 text-lg sm:text-xl font-semibold tracking-tight">
                   Bien le Bonjour &#128075; !
                 </h4>
@@ -94,8 +94,8 @@ export default function ScrollSection() {
               </div>
 
               {/* Deuxième colonne */}
-              <div className="flex-1 text-center md:text-left">
-                <h4 className="scroll-m-20 text-lg sm:text-xl font-semibold tracking-tight">
+              <div className="flex-1 text-center max-w-5xl">
+                <h4 className=" scroll-m-20 text-lg sm:text-xl font-semibold tracking-tight">
                   Mes loisirs &#128214;
                 </h4>
                 <div className="leading-6 sm:leading-7">
@@ -103,7 +103,7 @@ export default function ScrollSection() {
                   <LinkPreview className="border-b pb-1" url="https://www.fftt.com/site/personnes/by-number?number_id=904998">
                     tennis de table en compétition et suis actuellement classé 9
                   </LinkPreview>
-                  &nbsp;, la musculation et je suis passionné par l&apos;esport un domaine qui allie stratégie et passion pour les jeux vidéo.
+                  &nbsp;, la musculation mais égalament l&apos;esport, un domaine qui allie stratégie et passion pour les jeux vidéo.
                 </div>
               </div>
             </div>

@@ -53,6 +53,10 @@ const config: Config = {
           DEFAULT: "hsl(var(--destructive))",
           foreground: "hsl(var(--destructive-foreground))",
         },
+        success: {
+          DEFAULT: "#28a745", // Couleur de fond pour le succès (vert)
+          foreground: "#ffffff", // Couleur du texte pour le succès (blanc)
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

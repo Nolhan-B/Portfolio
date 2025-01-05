@@ -113,23 +113,27 @@ const data = [
         </div>
 
         <div className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mt-8 mb-8 flex gap-2 items-center">
-        <Popover>
-          <PopoverTrigger>
-            <TooltipProvider>
-              <Tooltip>
-                <TooltipTrigger asChild>
+
+        <TooltipProvider>
+          <Popover>
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <PopoverTrigger asChild>
                   <Button variant="outline" size="icon">
                     <Info />
                   </Button>
-                </TooltipTrigger>
-                <TooltipContent>Informations</TooltipContent>
-              </Tooltip>
-            </TooltipProvider>
-          </PopoverTrigger>
-          <PopoverContent>
-            Le projet utilise HTML, CSS, JavaScript avec l&apos;API Google Maps. Également il inclut un système d&apos;envoi d&apos;e-mails avec un fichier PHP, en utilisant AJAX pour la communication entre le frontend et le backend.
-          </PopoverContent>
-        </Popover>
+                </PopoverTrigger>
+              </TooltipTrigger>
+              <TooltipContent>Informations</TooltipContent>
+            </Tooltip>
+            <PopoverContent>
+              Le projet utilise HTML, CSS, JavaScript avec l&apos;API Google Maps. Également, il inclut un système
+              d&apos;envoi d&apos;e-mails avec un fichier PHP, en utilisant AJAX pour la communication entre le frontend
+              et le backend.
+            </PopoverContent>
+          </Popover>
+        </TooltipProvider>
+
 
 
           <TooltipProvider>
@@ -276,6 +280,7 @@ import ScrollSection from "@/components/horizontalSection/horizontalSection";
 import { Button } from '@/components/ui/button';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
+import { MacbookScroll } from '@/components/ui/macbook-scroll';
 
 export default function Home() {
 
@@ -285,6 +290,15 @@ export default function Home() {
       <ScrollSection />
       <Timeline data={data} />
       <div style={{height: '100vh'}}></div>
+      <MacbookScroll
+        title={
+          <span>
+            Sur LinkedIn, c’est du classique… <br /> Ici, c’est du sur-mesure, fait à la main et livré avec un sourire !
+          </span>
+        }
+        showGradient={false}
+      />
+      <div className='bg-background' style={{height: '100vh', zIndex: '5', position: 'relative'}}>Footer</div>
     </>
   );
 }
