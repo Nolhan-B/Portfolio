@@ -6,7 +6,7 @@ import Cookies from "js-cookie";
 import { Button } from "../ui/button";
 
 const COOKIE_NAME = "construction-popup";
-const COOKIE_EXPIRATION_TIME = 7 / 86400; // 20 secondes converties en jours
+const COOKIE_EXPIRATION_TIME = 7; // 7 jours
 
 const ConstructionPopup = () => {
   const [open, setOpen] = useState(false);
@@ -31,7 +31,6 @@ const ConstructionPopup = () => {
   return (
     <Dialog open={open} onOpenChange={setOpen}>
       <DialogTrigger asChild>
-        <div />
       </DialogTrigger>
       <DialogContent className=" rounded-lg z-[9999999]">
         <DialogTitle>Site en construction</DialogTitle>
@@ -39,7 +38,7 @@ const ConstructionPopup = () => {
             Le site est en cours de construction. Certains éléments peuvent manquer ou être incomplets, mais c&apos;est normal. Si vous rencontrez des erreurs ou d&apos;autres problèmes, n&apos;hésitez pas à me les signaler. Vous pouvez me contacter ici :{" "}
             <a href="mailto:nolhanbil@gmail.com">nolhanbil@gmail.com</a>.
         </DialogDescription>
-        <Button onClick={handleClose}>C'est noté.</Button>
+        <Button onClick={handleClose}>C&apos;est noté.</Button>
       </DialogContent>
     </Dialog>
   );

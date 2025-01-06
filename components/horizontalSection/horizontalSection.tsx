@@ -43,18 +43,6 @@ export default function ScrollSection() {
     };
   }, []);
 
-  const scrollToSection = (sectionId: string) => {
-    const section = document.getElementById(sectionId);
-    if (section) {
-      const sectionX = section.getBoundingClientRect().left + window.scrollX;
-      gsap.to(window, {
-        scrollTo: { x: sectionX },
-        duration: 1.5,
-        ease: "power2.out",
-      });
-    }
-  };
-
   return (
     <section className={styles.scrollSectionOuter}>
       <div ref={triggerRef}>
