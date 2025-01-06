@@ -43,6 +43,18 @@ export default function ScrollSection() {
     };
   }, []);
 
+  const scrollToSection = (sectionId: string) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      const sectionX = section.getBoundingClientRect().left + window.scrollX;
+      gsap.to(window, {
+        scrollTo: { x: sectionX },
+        duration: 1.5,
+        ease: "power2.out",
+      });
+    }
+  };
+
   return (
     <section className={styles.scrollSectionOuter}>
       <div ref={triggerRef}>
@@ -67,7 +79,7 @@ export default function ScrollSection() {
             </BackgroundLines>
           </div>
 
-          <div className={styles.scrollSection}>
+          <div id="qui-suis-je" className={styles.scrollSection}>
             <h1 className={styles.titre}>QUI SUIS-JE ?</h1>
             <div className="px-12 lg:px-38 flex flex-col gap-8 md:gap-16 items-center ">
 

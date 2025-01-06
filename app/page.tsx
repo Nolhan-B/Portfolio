@@ -25,6 +25,17 @@ import uha12 from '@/public/screen-criticlick/12.png';
 import uha13 from '@/public/screen-criticlick/13.png';
 import uha14 from '@/public/screen-criticlick/14.png';
 
+import clf1 from '@/public/screen-ping/1.png';
+import clf2 from '@/public/screen-ping/2.png';
+import clf3 from '@/public/screen-ping/3.png';
+import clf4 from '@/public/screen-ping/4.png';
+import clf5 from '@/public/screen-ping/4.png';
+import clf6 from '@/public/screen-ping/5.png';
+import clf7 from '@/public/screen-ping/6.png';
+import clf8 from '@/public/screen-ping/7.png';
+import clf9 from '@/public/screen-ping/8.png';
+
+
 import { Eye, Github, Info } from 'lucide-react';
 
 const data = [
@@ -381,63 +392,81 @@ const data = [
       </div>
     ),
   },
-  // {
-  //   title: "Changelog",
-  //   content: (
-  //     <div>
-  //       <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-4">
-  //         Deployed 5 new components on Aceternity today
-  //       </p>
-  //       <div className="mb-8">
-  //         <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-  //           ✅ Card grid component
-  //         </div>
-  //         <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-  //           ✅ Startup template Aceternity
-  //         </div>
-  //         <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-  //           ✅ Random file upload lol
-  //         </div>
-  //         <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-  //           ✅ Himesh Reshammiya Music CD
-  //         </div>
-  //         <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-  //           ✅ Salman Bhai Fan Club registrations open
-  //         </div>
-  //       </div>
-  //       <div className="grid grid-cols-2 gap-4">
-  //         <Image
-  //           src="https://assets.aceternity.com/pro/hero-sections.png"
-  //           alt="hero template"
-  //           width={500}
-  //           height={500}
-  //           className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-  //         />
-  //         <Image
-  //           src="https://assets.aceternity.com/features-section.png"
-  //           alt="feature template"
-  //           width={500}
-  //           height={500}
-  //           className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-  //         />
-  //         <Image
-  //           src="https://assets.aceternity.com/pro/bento-grids.png"
-  //           alt="bento template"
-  //           width={500}
-  //           height={500}
-  //           className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-  //         />
-  //         <Image
-  //           src="https://assets.aceternity.com/cards.png"
-  //           alt="cards template"
-  //           width={500}
-  //           height={500}
-  //           className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-  //         />
-  //       </div>
-  //     </div>
-  //   ),
-  // },
+  {
+    title: "NOV. 2024",
+    content: (
+      <div>
+        <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
+          Passionné par le tennis de table et souhaitant répondre aux besoins de mon club tout en voulant développer mes connaissances en développement web sur mon temps personnel, j&apos;ai développé un site web en utilisant Next.js pour ses performances et sa gestion efficace du rendu côté serveur. J&apos;ai choisi Supabase comme base de données pour sa simplicité d&apos;intégration et, surtout, pour sa fonctionnalité de stockage de fichiers, idéale pour gérer les photos du blog présent sur le site notamment.
+        </p>
+        <div className="grid grid-cols-2 gap-4">
+          <Image
+            src={clf1}
+            alt="Screenshot du site de La Savoureuse - Tennis de table"
+            width={500}
+            height={500}
+            className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+          />
+          <Image
+            src={clf2}
+            alt="Screenshot du site de La Savoureuse - Tennis de table"
+            width={500}
+            height={500}
+            className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+          />
+          <Image
+            src={clf3}
+            alt="Screenshot du site de La Savoureuse - Tennis de table"
+            width={500}
+            height={500}
+            className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+          />
+          <Image
+            src={clf4}
+            alt="Screenshot du site de La Savoureuse - Tennis de table"
+            width={500}
+            height={500}
+            className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+          />
+          <Image
+            src={clf5}
+            alt="Screenshot du site de La Savoureuse - Tennis de table"
+            width={500}
+            height={500}
+            className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+          />
+          <Image
+            src={clf5}
+            alt="Screenshot du site de La Savoureuse - Tennis de table"
+            width={500}
+            height={500}
+            className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+          />
+          <Image
+            src={clf6}
+            alt="Screenshot du site de La Savoureuse - Tennis de table"
+            width={500}
+            height={500}
+            className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+          />
+          <Image
+            src={clf7}
+            alt="Screenshot du site de La Savoureuse - Tennis de table"
+            width={500}
+            height={500}
+            className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+          />
+          <Image
+            src={clf8}
+            alt="Screenshot du site de La Savoureuse - Tennis de table"
+            width={500}
+            height={500}
+            className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+          />
+        </div>
+      </div>
+    ),
+  },
 ];
 
 import Image from "next/image";
@@ -450,12 +479,19 @@ import { MacbookScroll } from '@/components/ui/macbook-scroll';
 import Link from 'next/link';
 
 export default function Home() {
-
-
   return (
     <>
-      <ScrollSection />
-      <Timeline data={data} />
+      <div className='relative' id="accueil">
+        <div id='qui-suis-je' className=' absolute top-[175vh] right-0 left-0 w-screen h-screen'></div>
+        <div id='mes-competences' className=' absolute top-[350vh] right-0 left-0 w-screen h-screen'></div>
+        <ScrollSection />
+      </div>
+      
+      <div id="mes-projets">
+        <Timeline data={data} />
+      </div>
+
+      <div id="mon-cv">
         <MacbookScroll
           title={
             <span>
@@ -464,8 +500,11 @@ export default function Home() {
           }
           showGradient={false}
         />
-      <div className='bg-background' style={{height: '300px', zIndex: '5', position: 'relative'}}>Footer</div>
-      
+      </div>
+
+      <div  className="bg-background" style={{ height: "300px", zIndex: 5, position: "relative" }}>
+        Footer
+      </div>
     </>
   );
 }
