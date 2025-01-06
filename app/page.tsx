@@ -169,22 +169,23 @@ const data = [
           </TooltipProvider>
 
           <TooltipProvider>
-          <Tooltip>
-            <TooltipTrigger asChild>
-              <Button
-                variant="outline"
-                size="icon"
-                onClick={() => {
-                  alert("Bientôt disponnible.");
-                }}
-              >
-                <Eye />
-            </Button>
-            </TooltipTrigger>
-            <TooltipContent>Se rendre sur le site</TooltipContent>
-          </Tooltip>
-        </TooltipProvider>
-        
+            <Tooltip>
+              <TooltipTrigger asChild>
+                  <Button 
+                    variant="outline" 
+                    size="icon" 
+                    onClick={(e) => {
+                      e.preventDefault();
+                      alert("Il s'agit d'un site ");
+                      window.open("http://dbvtcby.cluster029.hosting.ovh.net/", '_blank');
+                    }}
+                  >
+                    <Eye />
+                  </Button>
+              </TooltipTrigger>
+              <TooltipContent>Se rendre sur le site</TooltipContent>
+            </Tooltip>
+          </TooltipProvider>
         </div>
         
 
