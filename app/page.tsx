@@ -114,7 +114,7 @@ const data = [
         </div>
 
         <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mt-8 mb-8">
-          Ce système permet une prise de contact rapide et efficace, simplifiant la gestion des réservations. Une fois le mail envoyé, un message de confirmation apparaît à l’écran, informant l’utilisateur que sa demande a bien été prise en compte.
+          Une fois le mail envoyé, un message de confirmation apparaît à l’écran, informant l’utilisateur que sa demande a bien été prise en compte. Ce système permet une prise de contact rapide et efficace, simplifiant la gestion des réservations.
         </p>
 
         <div className="grid grid-cols-2 gap-4">
@@ -176,7 +176,7 @@ const data = [
                     size="icon" 
                     onClick={(e) => {
                       e.preventDefault();
-                      alert("Il s'agit d'un site ");
+                      alert("Il s'agit d'un site temporaire, herbegé par OVH.");
                       window.open("http://dbvtcby.cluster029.hosting.ovh.net/", '_blank');
                     }}
                   >
@@ -272,14 +272,14 @@ const data = [
             className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
           />
           <Image
-              src={uha9}
+              src={uha11}
               alt="Screenshot du site Criticlick"
               width={500}
               height={500}
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
           />
           <Image
-            src={uha10}
+            src={uha14}
             alt="Screenshot du site Criticlick"
             width={500}
             height={500}
@@ -292,8 +292,8 @@ const data = [
         </p>
 
         <div className="grid grid-cols-2 gap-4">
-          <Image
-              src={uha11}
+        <Image
+              src={uha13}
               alt="Screenshot du site Criticlick"
               width={500}
               height={500}
@@ -306,15 +306,16 @@ const data = [
             height={500}
             className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
           />
+
           <Image
-              src={uha13}
+              src={uha9}
               alt="Screenshot du site Criticlick"
               width={500}
               height={500}
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
           />
           <Image
-            src={uha14}
+            src={uha10}
             alt="Screenshot du site Criticlick"
             width={500}
             height={500}
@@ -458,7 +459,7 @@ export default function Home() {
         <MacbookScroll
           title={
             <span>
-              Sur LinkedIn, c’est du classique… <br /> Ici, c’est du sur-mesure, fait à la main et livré avec un sourire !
+              Sur LinkedIn, c’est du classique… <br /> Ici, c’est du sur-mesure, fait à la main et avec le sourire !
             </span>
           }
           showGradient={false}

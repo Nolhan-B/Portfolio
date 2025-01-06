@@ -201,7 +201,7 @@ export const Lid = ({
       >
         <div className="absolute inset-0 flex flex-col items-center justify-center gap-8">
           <h2 className="dark:text-white text-neutral-800 text-3xl font-bold text-center">
-            Votre prochain collaborateur est juste ici.
+            Votre prochain développeur est juste ici.
           </h2>
 
           <div className="flex gap-4">
