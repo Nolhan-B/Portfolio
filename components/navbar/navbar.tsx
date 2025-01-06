@@ -76,39 +76,38 @@ const Navbar = () => {
           </li>
         </ul>
 
-        {/* Dropdown Menu pour mobile */}
-        <div className="flex items-center z-[999999999999] space-x-3">
-          <DropdownMenu>
-            <DropdownMenuTrigger asChild>
-              <Button variant="outline" size="icon" className="z-10 md:hidden">
-                <Menu className="h-[1.2rem] w-[1.2rem]" />
-              </Button>
-            </DropdownMenuTrigger>
-            <DropdownMenuContent className="w-40 z-[9999]">
-              <DropdownMenuLabel>Navigation</DropdownMenuLabel>
-              <DropdownMenuSeparator />
-              <DropdownMenuGroup>
-                <DropdownMenuItem onClick={() => scrollToSection("accueil")}>
-                  Accueil
-                </DropdownMenuItem>
-                <DropdownMenuItem onClick={() => scrollToSection("qui-suis-je")}>
+        <div className="flex items-center z-[999999999999] space-x-3 relative">
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <Button variant="outline" size="icon" className="z-10 md:hidden">
+                  <Menu className="h-[1.2rem] w-[1.2rem]" />
+                </Button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent className="w-40 z-[9999999]">
+                <DropdownMenuLabel>Navigation</DropdownMenuLabel>
+                <DropdownMenuSeparator />
+                <DropdownMenuGroup>
+                  <DropdownMenuItem onClick={() => scrollToSection("accueil")}>
+                    Accueil
+                  </DropdownMenuItem>
+                  <DropdownMenuItem onClick={() => scrollToSection("qui-suis-je")}>
                     Qui suis-je ?
-                </DropdownMenuItem>
-                <DropdownMenuItem onClick={() => scrollToSection("mes-competences")}>
-                  Mes compétences
-                </DropdownMenuItem>
-                <DropdownMenuItem onClick={() => scrollToSection("mes-projets")}>
-                  Mes projets
-                </DropdownMenuItem>
-                <DropdownMenuItem onClick={() => scrollToSection("mon-cv")}>
-                  Mon CV
-                </DropdownMenuItem>
-              </DropdownMenuGroup>
-            </DropdownMenuContent>
-          </DropdownMenu>
+                  </DropdownMenuItem>
+                  <DropdownMenuItem onClick={() => scrollToSection("mes-competences")}>
+                    Mes compétences
+                  </DropdownMenuItem>
+                  <DropdownMenuItem onClick={() => scrollToSection("mes-projets")}>
+                    Mes projets
+                  </DropdownMenuItem>
+                  <DropdownMenuItem onClick={() => scrollToSection("mon-cv")}>
+                    Mon CV
+                  </DropdownMenuItem>
+                </DropdownMenuGroup>
+              </DropdownMenuContent>
+            </DropdownMenu>
 
-          <ModeToggle />
-        </div>
+            <ModeToggle />
+          </div>
       </div>
     </nav>
   );
