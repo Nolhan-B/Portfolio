@@ -30,9 +30,9 @@ import clf2 from '@/public/screen-ping/2.png';
 import clf3 from '@/public/screen-ping/3.png';
 import clf4 from '@/public/screen-ping/4.png';
 import clf5 from '@/public/screen-ping/4.png';
-import clf6 from '@/public/screen-ping/5.png';
-import clf7 from '@/public/screen-ping/6.png';
-import clf8 from '@/public/screen-ping/7.png';
+import clf6 from '@/public/screen-ping/6.png';
+import clf7 from '@/public/screen-ping/7.png';
+import clf8 from '@/public/screen-ping/8.png';
 import clf9 from '@/public/screen-ping/8.png';
 
 
@@ -191,15 +191,13 @@ const data = [
                       window.open("http://dbvtcby.cluster029.hosting.ovh.net/", '_blank');
                     }}
                   >
-                    <Eye />
+                    <Eye id='criticlick' />
                   </Button>
               </TooltipTrigger>
               <TooltipContent>Se rendre sur le site</TooltipContent>
             </Tooltip>
           </TooltipProvider>
         </div>
-        
-
       </div>
     ),
   },
@@ -381,7 +379,7 @@ const data = [
                   alert("Déployer le projet en suivant la documentation pour visualiser.");
                 }}
               >
-                <Eye />
+                <Eye id='la-savoureuse-tt' />
             </Button>
             </TooltipTrigger>
             <TooltipContent>Se rendre sur le site</TooltipContent>
@@ -423,13 +421,6 @@ const data = [
           />
           <Image
             src={clf4}
-            alt="Screenshot du site de La Savoureuse - Tennis de table"
-            width={500}
-            height={500}
-            className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-          />
-          <Image
-            src={clf5}
             alt="Screenshot du site de La Savoureuse - Tennis de table"
             width={500}
             height={500}
@@ -494,7 +485,8 @@ export default function Home() {
         <ScrollSection />
       </div>
       
-      <div id="mes-projets">
+      <div className='relative' id="mes-projets">
+        <div id='db-vtc-comtois' className='w-4 h-4 absolute top-[200px] sm:top-[300px]'></div>
         <Timeline data={data} />
       </div>
 
