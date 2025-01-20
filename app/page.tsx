@@ -25,15 +25,26 @@ import uha12 from '@/public/screen-criticlick/12.png';
 import uha13 from '@/public/screen-criticlick/13.png';
 import uha14 from '@/public/screen-criticlick/14.png';
 
-import clf1 from '@/public/screen-ping/1.png';
-import clf2 from '@/public/screen-ping/2.png';
-import clf3 from '@/public/screen-ping/3.png';
-import clf4 from '@/public/screen-ping/4.png';
-import clf5 from '@/public/screen-ping/4.png';
-import clf6 from '@/public/screen-ping/6.png';
-import clf7 from '@/public/screen-ping/7.png';
-import clf8 from '@/public/screen-ping/8.png';
-import clf9 from '@/public/screen-ping/8.png';
+import clf1 from '@/public/screen-ping/accueil/1.png';
+import clf2 from '@/public/screen-ping/accueil/2.png';
+import clf3 from '@/public/screen-ping/accueil/3.png';
+import clf4 from '@/public/screen-ping/accueil/4.png';
+
+import clf5 from '@/public/screen-ping/blog/1.png';
+import clf6 from '@/public/screen-ping/blog/2.png';
+import clf7 from '@/public/screen-ping/blog/3.png';
+
+import clf8 from '@/public/screen-ping/login/1.png';
+import clf9 from '@/public/screen-ping/login/2.png';
+import clf10 from '@/public/screen-ping/login/3.png';
+import clf11 from '@/public/screen-ping/login/4.png';
+
+import clf12 from '@/public/screen-ping/login/5.png';
+import clf13 from '@/public/screen-ping/login/6.png';
+import clf14 from '@/public/screen-ping/login/7.png';
+import clf15 from '@/public/screen-ping/login/8.png';
+
+
 
 
 import { Eye, Github, Info } from 'lucide-react';
@@ -397,7 +408,12 @@ const data = [
         <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
           Passionné par le tennis de table et souhaitant répondre aux besoins de mon club tout en voulant développer mes connaissances en développement web sur mon temps personnel, j&apos;ai développé un site web en utilisant Next.js pour ses performances et sa gestion efficace du rendu côté serveur. J&apos;ai choisi Supabase comme base de données pour sa simplicité d&apos;intégration et, surtout, pour sa fonctionnalité de stockage de fichiers, idéale pour gérer les photos du blog présent sur le site notamment.
         </p>
-        <div className="grid grid-cols-2 gap-4">
+
+        <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
+        Sur la page d’accueil, j’ai mis en avant un titre accrocheur accompagné d&apos;un bouton ludique &quot;Moi aussi je veux jouer !&quot; pour inviter les visiteurs à nous rejoindre. Un court paragraphe présente le club, suivi d’un aperçu du blog avec les trois derniers articles publiés. Enfin, un formulaire de contact est placé en bas pour faciliter les échanges.
+        </p>
+
+        <div className="grid grid-cols-2 gap-4 mb-8">
           <Image
             src={clf1}
             alt="Screenshot du site de La Savoureuse - Tennis de table"
@@ -426,6 +442,90 @@ const data = [
             height={500}
             className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
           />
+        </div>
+
+        <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
+          Dans la barre de navigation, on trouve un menu dédié au compte utilisateur. Les nouveaux visiteurs peuvent créer un compte en fournissant leur e-mail, nom, prénom et mot de passe. Une fois inscrit, il leur est demandé de confirmer leur adresse e-mail en cliquant sur un lien de vérification envoyé grâce au service RESEND. Une fois l&apos;adresse confirmée, l&apos;utilisateur peut accéder à son espace personnel.
+        </p>
+
+        <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
+          Dans mon cas, en tant qu&apos;administrateur, mon menu inclut un accès à un panneau de gestion confidentiel. Celui-ci permet de gérer les utilisateurs, de superviser les articles du blog, et d&apos;accéder à bien d&apos;autres fonctionnalités intéressantes pour administrer le site efficacement.
+        </p>
+
+        <div className="grid grid-cols-2 gap-4 mb-8">
+        <Image
+            src={clf8}
+            alt="Screenshot du site de La Savoureuse - Tennis de table"
+            width={500}
+            height={500}
+            className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+          />
+        <Image
+            src={clf9}
+            alt="Screenshot du site de La Savoureuse - Tennis de table"
+            width={500}
+            height={500}
+            className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+          />
+        <Image
+            src={clf10}
+            alt="Screenshot du site de La Savoureuse - Tennis de table"
+            width={500}
+            height={500}
+            className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+          />
+        <Image
+            src={clf11}
+            alt="Screenshot du site de La Savoureuse - Tennis de table"
+            width={500}
+            height={500}
+            className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+          />
+        </div>
+
+        <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
+          Bien entendu, que vous soyez connecté ou non, si vous avez oublié votre mot de passe, vous pouvez le réinitialiser. Si vous êtes connecté, vous serez redirigé vers une page pour modifier votre mot de passe. Si vous n&apos;êtes pas connecté, un e-mail vous sera envoyé avec un lien pour vous permettre de réinitialiser votre mot de passe.
+        </p>
+
+        <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
+          Il est également possible de changer votre adresse e-mail ainsi que votre nom d&apos;utilisateur depuis la page &apos;Mon Compte&apos;. De plus, votre rôle sur le site est renseigné sous forme de petits badges sous votre nom et prénom.
+        </p>
+        <div className="grid grid-cols-2 gap-4 mb-8">
+        <Image
+            src={clf12}
+            alt="Screenshot du site de La Savoureuse - Tennis de table"
+            width={500}
+            height={500}
+            className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+          />
+        <Image
+            src={clf13}
+            alt="Screenshot du site de La Savoureuse - Tennis de table"
+            width={500}
+            height={500}
+            className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+          />
+        <Image
+            src={clf14}
+            alt="Screenshot du site de La Savoureuse - Tennis de table"
+            width={500}
+            height={500}
+            className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+          />
+        <Image
+            src={clf15}
+            alt="Screenshot du site de La Savoureuse - Tennis de table"
+            width={500}
+            height={500}
+            className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+          />
+        </div>
+
+        <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
+        Sur la page du blog, un article mis en avant par les gestionnaires du blog est affiché dès l&apos;arrivée. Ensuite, une liste des articles s&apos;affiche, avec des options de filtrage par catégorie et par titre pour faciliter la recherche. Une pagination est également disponible pour naviguer aisément entre les différentes pages.
+        </p>
+
+        <div className="grid grid-cols-2 gap-4">
           <Image
             src={clf5}
             alt="Screenshot du site de La Savoureuse - Tennis de table"
@@ -442,20 +542,6 @@ const data = [
           />
           <Image
             src={clf7}
-            alt="Screenshot du site de La Savoureuse - Tennis de table"
-            width={500}
-            height={500}
-            className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-          />
-          <Image
-            src={clf8}
-            alt="Screenshot du site de La Savoureuse - Tennis de table"
-            width={500}
-            height={500}
-            className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-          />
-          <Image
-            src={clf9}
             alt="Screenshot du site de La Savoureuse - Tennis de table"
             width={500}
             height={500}
@@ -484,7 +570,7 @@ export default function Home() {
         <div id='mes-competences' className=' absolute top-[350vh] right-0 left-0 w-screen h-screen'></div>
         <ScrollSection />
       </div>
-      
+
       <div className='relative' id="mes-projets">
         <div id='db-vtc-comtois' className='w-4 h-4 absolute top-[200px] sm:top-[300px]'></div>
         <Timeline data={data} />
