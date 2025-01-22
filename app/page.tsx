@@ -700,20 +700,20 @@ export default function Home() {
         />
       </div>
 
-      <div className="bg-background" style={{ height: "300px", zIndex: 5, position: "relative" }}>
-  <div
-    style={{
-      position: "absolute",
-      bottom: 0,
-      width: "100%",
-      textAlign: "center",
-      padding: "20px",
-    }}
-  >
-    <p>© 2025 Nolhan BILYJ. Tous droits réservés.</p>
-    <p>"Créer, innover, apprendre."</p>
-  </div>
-</div>
+      {/* <div className="bg-background" style={{ height: "300px", zIndex: 5, position: "relative" }}>
+        <div
+          style={{
+            position: "absolute",
+            bottom: 0,
+            width: "100%",
+            textAlign: "center",
+            padding: "20px",
+          }}
+        >
+          <p>© 2025 Nolhan BILYJ. Tous droits réservés.</p>
+          <p>"Créer, innover, apprendre."</p>
+        </div>
+      </div> */}
     </>
   );
 }
