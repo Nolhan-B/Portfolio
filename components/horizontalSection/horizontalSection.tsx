@@ -22,17 +22,18 @@ export default function ScrollSection() {
   useEffect(() => {
     const animation = gsap.fromTo(
       sectionRef.current,
-      { translateX: 0 },
+      { translateX: "0" }, // Position de départ
       {
-        translateX: "-200vw",
+        translateX: "-200vw", // Position cible
         ease: "none",
         scrollTrigger: {
           trigger: triggerRef.current,
           start: "top top",
           end: "350% top",
-          scrub: 0.6,
+          scrub: 0.5,
           pin: true,
           pinSpacing: true,
+          toggleActions: "play reverse play reverse", // Activation du sens inverse
         },
       }
     );
