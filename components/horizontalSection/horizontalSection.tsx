@@ -14,7 +14,6 @@ export default function ScrollSection() {
   const sectionRef = useRef(null);
   const triggerRef = useRef(null);
 
-  // ✅ Suivi du statut de chargement de l'image
   const [isImageLoaded, setIsImageLoaded] = useState(false);
 
   gsap.registerPlugin(ScrollTrigger);

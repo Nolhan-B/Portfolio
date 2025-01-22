@@ -44,6 +44,13 @@ import clf13 from '@/public/screen-ping/login/6.png';
 import clf14 from '@/public/screen-ping/login/7.png';
 import clf15 from '@/public/screen-ping/login/8.png';
 
+import clf16 from '@/public/screen-ping/blog/4.png';
+import clf17 from '@/public/screen-ping/blog/5.png';
+import clf18 from '@/public/screen-ping/blog/6.png';
+import clf19 from '@/public/screen-ping/blog/7.png';
+import clf20 from '@/public/screen-ping/blog/8.png';
+
+
 
 
 
@@ -342,7 +349,7 @@ const data = [
             className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
           />
         </div>
-        
+
         <div className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mt-8 mb-8 flex gap-2 items-center">
 
         <TooltipProvider>
@@ -396,7 +403,6 @@ const data = [
             <TooltipContent>Se rendre sur le site</TooltipContent>
           </Tooltip>
         </TooltipProvider>
-        
         </div>
       </div>
     ),
@@ -548,6 +554,113 @@ const data = [
             className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
           />
         </div>
+
+        <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mt-8 mb-8">
+        Sur chaque page d&apos;article, on retrouve son titre, sa date de publication, sa catégorie et sa miniature l&apos;illustrant, ainsi que son contenu. Sur le côté de la page, des recommandations d&aposarticles et de catégories à consulter sont également proposées pour enrichir l&apos;expérience de lecture et encourager l&apos;exploration du site.
+        </p>
+
+        <div className="grid grid-cols-2 gap-4">
+          <Image
+            src={clf16}
+            alt="Screenshot du site de La Savoureuse - Tennis de table"
+            width={500}
+            height={500}
+            className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+          />
+          <Image
+            src={clf17}
+            alt="Screenshot du site de La Savoureuse - Tennis de table"
+            width={500}
+            height={500}
+            className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+          />
+        </div>
+
+        <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mt-8 mb-8">
+          Chaque article intègre une section commentaires, où les utilisateurs peuvent consulter les messages laissés par d&apos;autres lecteurs. Si vous êtes connecté, vous avez la possibilité de contribuer en publiant vos propres commentaires pour partager votre point de vue ou autre.
+        </p>
+
+        <div className="grid grid-cols-2 gap-4">
+        <Image
+            src={clf18}
+            alt="Screenshot du site de La Savoureuse - Tennis de table"
+            width={500}
+            height={500}
+            className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+          />
+          <Image
+            src={clf19}
+            alt="Screenshot du site de La Savoureuse - Tennis de table"
+            width={500}
+            height={500}
+            className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+          />
+          <Image
+            src={clf20}
+            alt="Screenshot du site de La Savoureuse - Tennis de table"
+            width={500}
+            height={500}
+            className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+          />
+        </div>
+
+        <div className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mt-8 mb-8 flex gap-2 items-center">
+
+          <TooltipProvider>
+            <Popover>
+              <Tooltip>
+                <TooltipTrigger asChild>
+                  <PopoverTrigger asChild>
+                    <Button variant="outline" size="icon">
+                      <Info />
+                    </Button>
+                  </PopoverTrigger>
+                </TooltipTrigger>
+                <TooltipContent>Informations</TooltipContent>
+              </Tooltip>
+              <PopoverContent>
+                Le projet utilise NextJS + Supabase, Resend, React-QUILL
+              </PopoverContent>
+            </Popover>
+          </TooltipProvider>
+
+
+
+          <TooltipProvider>
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <Button
+                  variant="outline"
+                  size="icon"
+                  onClick={() => {
+                    alert("Ce repository est privé.");
+                  }}
+                  >
+                  <Github />
+                </Button>
+              </TooltipTrigger>
+              <TooltipContent>Repository Github</TooltipContent>
+            </Tooltip>
+          </TooltipProvider>
+
+            <TooltipProvider>
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <Button
+                  variant="outline"
+                  size="icon"
+                  onClick={() => {
+                    alert("Lien bientôt disponible.");
+                  }}
+                >
+                  <Eye id='la-savoureuse-tt' />
+              </Button>
+              </TooltipTrigger>
+              <TooltipContent>Se rendre sur le site</TooltipContent>
+            </Tooltip>
+          </TooltipProvider>
+          </div>
+
       </div>
     ),
   },
@@ -587,9 +700,20 @@ export default function Home() {
         />
       </div>
 
-      {/* <div  className="bg-background" style={{ height: "300px", zIndex: 5, position: "relative" }}>
-        Footer
-      </div> */}
+      <div className="bg-background" style={{ height: "300px", zIndex: 5, position: "relative" }}>
+  <div
+    style={{
+      position: "absolute",
+      bottom: 0,
+      width: "100%",
+      textAlign: "center",
+      padding: "20px",
+    }}
+  >
+    <p>© 2025 Nolhan BILYJ. Tous droits réservés.</p>
+    <p>"Créer, innover, apprendre."</p>
+  </div>
+</div>
     </>
   );
 }
