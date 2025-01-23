@@ -365,8 +365,7 @@ const data = [
               <TooltipContent>Informations</TooltipContent>
             </Tooltip>
             <PopoverContent>
-              Le projet utilise HTML, CSS, JavaScript avec l&apos;API Google Maps. Également, il inclut un système
-              d&apos;envoi d&apos;e-mails avec un fichier PHP, en utilisant AJAX pour la communication entre le frontend
+              J&apos;ai utilisé HTML, CSS, JavaScript, PHP, SQL, Bash, XAMPP pour le serveur local, Git pour la gestion de version et des intégrations API.
               et le backend.
             </PopoverContent>
           </Popover>
