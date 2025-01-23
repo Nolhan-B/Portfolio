@@ -366,7 +366,6 @@ const data = [
             </Tooltip>
             <PopoverContent>
               J&apos;ai utilisé HTML, CSS, JavaScript, PHP, SQL, Bash, XAMPP pour le serveur local, Git pour la gestion de version et des intégrations API.
-              et le backend.
             </PopoverContent>
           </Popover>
         </TooltipProvider>
