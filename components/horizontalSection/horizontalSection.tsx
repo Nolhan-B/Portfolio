@@ -9,6 +9,7 @@ import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/comp
 import { LinkPreview } from "@/components/ui/link-preview";
 import styles from "./horizontalSection.module.css";
 import moi from "@/public/moi.jpg";
+import { Tabs } from "../ui/tabs";
 
 export default function ScrollSection() {
   const sectionRef = useRef(null);
@@ -109,8 +110,7 @@ export default function ScrollSection() {
             </div>
           </div>
 
-          <div className={styles.scrollSection}>
-            <h3>Section 3</h3>
+          <div className="relative flex flex-col">
           </div>
         </div>
       </div>

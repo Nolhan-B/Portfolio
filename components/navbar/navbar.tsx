@@ -23,7 +23,7 @@ import {
 
 import { ChevronDown, ChevronUp, Menu } from "lucide-react";
 import { cn } from "@/lib/utils";
-import Contact from "../Contact";
+import ContactButton from "../ContactButton/ContactButton";
 
 const Navbar = () => {
   const scrollToSection = (sectionId: string) => {
@@ -175,7 +175,7 @@ const Navbar = () => {
 
       {/* ModeToggle */}
       <ModeToggle />
-      <Contact/>
+      <ContactButton/>
     </div>
   </div>
 </nav>

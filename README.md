@@ -18,6 +18,7 @@ Ce projet est un portfolio personnel conçu avec **Next.js**, en utilisant **Sha
 - **[Next.js](https://nextjs.org/):** Framework React performant.
 - **[Shadcn](https://shadcn.dev/):** Composants UI préconstruits et personnalisables.
 - **[Aeternity UI](https://aceternity.dev/):** Système de design élégant et modulable.
+- **Nodemailer:** Envoie facile d'email pour mon formulaire de contact.
 - **TypeScript:** Typage statique pour un code fiable.
 - **Tailwind CSS:** Framework CSS utilitaire rapide et puissant.
 
@@ -37,17 +38,25 @@ Ce projet est un portfolio personnel conçu avec **Next.js**, en utilisant **Sha
    cd Portfolio
 
 2. **Installer les dépendances**
+
+    *Avec node*
     ```bash
     npm install
-# ou avec yarn
+   ```
+    *Ou avec yarn*
+    ```bash
     yarn install
+    ```
 
 3. **Lancer le serveur de développement**
+   *Avec node*
     ```bash
     npm run dev
-# ou avec yarn
-    yarn dev
-
+   ```
+   *Ou avec yarn*
+    ```bash
+    yarn run dev
+    ```
 4. **Accéder à l'application**
 
-Ouvrez http://localhost:3000 dans votre navigateur pour voir mon portfolio.
+Ouvrez ***http://localhost:3000*** dans votre navigateur pour voir mon portfolio.
