@@ -10,28 +10,28 @@ import { Button } from '../ui/button';
 import { Label } from '../ui/label';
 import { Input } from '../ui/input';
 import { Textarea } from '../ui/textarea';
-import { Linkedin, Loader2, Phone } from 'lucide-react';
+import { Linkedin, Loader2, Mail, Phone } from 'lucide-react';
 import { Select, SelectContent, SelectGroup, SelectItem, SelectTrigger } from '../ui/select';
 import { SelectValue } from '@radix-ui/react-select';
 import Link from 'next/link';
 
-const ContactForm = ({ onSubmit }: { onSubmit: (data: { identity: string; email: string; subject: string; content: string }) => void }) => {
+const ContactForm = () => {
   const [identity, setIdentity] = useState('');
   const [email, setEmail] = useState('');
   const [subject, setSubject] = useState('');
   const [content, setContent] = useState('');
   const [loading, setLoading] = useState(false);
+  const [status, setStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const [errorMessage, setErrorMessage] = useState('');
 
   const isFormValid = identity && email && subject && content;
 
   const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
-
     setLoading(true);
 
     const data = { identity, email, subject, content };
 
-    const startTime = Date.now(); // Capture le temps de début pour garantir 3s minimum
     try {
       const response = await fetch('/api/sendEmail', {
         method: 'POST',
@@ -43,27 +43,61 @@ const ContactForm = ({ onSubmit }: { onSubmit: (data: { identity: string; email:
 
       const result = await response.json();
 
-      const elapsedTime = Date.now() - startTime;
-      const delay = Math.max(2250 - elapsedTime, 0);
-
-      setTimeout(() => {
-        if (response.ok) {
-          alert(result.success || 'Votre message a été envoyé avec succès !');
-          setIdentity('');
-          setEmail('');
-          setSubject('');
-          setContent('');
-        } else {
-          alert(result.error || 'Une erreur est survenue lors de l\'envoi de votre message.');
-        }
-        setLoading(false);
-      }, delay);
+      if (response.ok) {
+        setStatus('success');
+      } else {
+        setErrorMessage(result.error || 'Une erreur est survenue.');
+        setStatus('error');
+      }
     } catch (error) {
       console.error('Erreur lors de l\'envoi du message :', error);
-      alert('Une erreur est survenue. Veuillez réessayer plus tard.');
-      setLoading(false); // Libère l'état de chargement même en cas d'erreur
+      setErrorMessage('Une erreur est survenue. Veuillez réessayer.');
+      setStatus('error');
+    } finally {
+      setLoading(false);
     }
   };
+
+  if (status === 'success') {
+    return (
+      <div className="space-y-4 text-center flex flex-col justify-center items-center">
+        <h3 className="text-lg font-bold">Merci pour votre message !</h3>
+        <p>Vous pouvez également me contacter via :</p>
+        <div className="flex items-center justify-center space-x-4">
+          <Link href="tel:0669450903">
+          <Button variant="ghost" className="flex items-center gap-2">
+              <Phone />
+              06 69 45 09 03
+            </Button>
+          </Link>
+          <Link href="href">
+            <Button variant="ghost" className='flex gap-2 justify-center items-center'>
+              <Mail/>
+              nolhanbil@gmail.com
+            </Button>
+          </Link>
+        </div>
+        <Link href="https://www.linkedin.com/in/nolhan-bilyj-27a546341/" target="_blank" className="flex items-center gap-2">
+            <Button variant="ghost" className="flex items-center gap-2">
+              <Linkedin />
+              LinkedIn
+            </Button>
+            </Link>
+      </div>
+    );
+  }
+
+  if (status === 'error') {
+    return (
+      <div className="space-y-4 text-center">
+        <h3 className="text-lg font-bold text-red-600">Une erreur est survenue</h3>
+        <p>{errorMessage}</p>
+        <Button variant="default" onClick={() => setStatus('idle')}>
+          Réessayer
+        </Button>
+      </div>
+    );
+  }
 
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
@@ -133,13 +167,6 @@ const ContactForm = ({ onSubmit }: { onSubmit: (data: { identity: string; email:
 };
 
 const ContactButton = () => {
-  const handleFormSubmit = (data: { identity: string; email: string; subject: string; content: string }) => {
-    console.log('Nom:', data.identity);
-    console.log('Email:', data.email);
-    console.log('Objet:', data.subject);
-    console.log('Contenu:', data.content);
-  };
-
   return (
     <div>
       <Dialog>
@@ -151,26 +178,7 @@ const ContactButton = () => {
             <h2 className="font-bold text-2xl">Rentrons en contact</h2>
           </DialogHeader>
           <DialogDescription>
-            <ContactForm onSubmit={handleFormSubmit} />
-            <div className="flex items-center mt-4 mb-2">
-              <div className="flex-1 h-px bg-muted-foreground"></div>
-              <span className="px-4 text-sm text-muted-foreground">Autres alternatives</span>
-              <div className="flex-1 h-px bg-muted-foreground"></div>
-            </div>
-            <div className="flex items-center justify-between space-x-2">
-              <Button variant="ghost" className="flex-1 flex items-center gap-2">
-                <Link href="https://www.linkedin.com/in/nolhan-bilyj-27a546341/" target="_blank" className="flex justify-center items-center gap-2">
-                  <Linkedin />
-                  LinkedIn
-                </Link>
-              </Button>
-              <Button variant="ghost" className="flex-1 flex items-center gap-2">
-                <Link href="tel:+33669450903" className="flex justify-center items-center gap-2">
-                  <Phone />
-                  Téléphone
-                </Link>
-              </Button>
-            </div>
+            <ContactForm />
           </DialogDescription>
         </DialogContent>
       </Dialog>

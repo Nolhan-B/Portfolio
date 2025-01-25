@@ -9,7 +9,6 @@ import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/comp
 import { LinkPreview } from "@/components/ui/link-preview";
 import styles from "./horizontalSection.module.css";
 import moi from "@/public/moi.jpg";
-import { Tabs } from "../ui/tabs";
 
 export default function ScrollSection() {
   const sectionRef = useRef(null);

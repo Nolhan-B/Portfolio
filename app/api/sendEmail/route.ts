@@ -68,9 +68,13 @@ export async function POST(req: Request) {
       { success: 'Email envoyé avec succès !' },
       { status: 200 }
     );
-  } catch (error: any) {
+  } catch (error) {
     // Log de l'erreur pour débogage
-    console.error('Erreur lors de l\'envoi de l\'email :', error.message);
+    if (error instanceof Error) {
+      console.error('Erreur lors de l\'envoi de l\'email :', error.message);
+    } else {
+      console.error('Erreur inconnue lors de l\'envoi de l\'email :', error);
+    }
 
     // Réponse en cas d'erreur
     return NextResponse.json(
