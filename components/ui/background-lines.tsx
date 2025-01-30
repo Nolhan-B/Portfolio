@@ -89,8 +89,7 @@ const SVG = ({
   ];
 
   const colors = [
-    ...Array(140).fill("#16a34a"),
-    ...Array(140).fill("hsl(var(--foreground))"),
+    ...Array(140).fill("hsl(var(--primary))"),
   ];
 
   
