@@ -175,7 +175,7 @@ const ContactButton = () => {
         </DialogTrigger>
         <DialogContent className="overflow-visible">
           <DialogHeader>
-            <h2 className="font-bold text-2xl">Rentrons en contact</h2>
+            <h2 className="font-bold text-2xl">Me contacter</h2>
           </DialogHeader>
           <DialogDescription>
             <ContactForm />
