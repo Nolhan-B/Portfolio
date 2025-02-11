@@ -205,8 +205,7 @@ const data = [
                     size="icon" 
                     onClick={(e) => {
                       e.preventDefault();
-                      alert("Il s'agit d'un site temporaire, herbegé par OVH.");
-                      window.open("http://dbvtcby.cluster029.hosting.ovh.net/", '_blank');
+                      window.open("https://db-vtc-belfort.fr", '_blank');
                     }}
                   >
                     <Eye id='criticlick' />
